@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		929ACA4A8A5D44203752738D /* Pods_H4RD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D92DC773A9558FCE88FBB6 /* Pods_H4RD.framework */; };
+		A8EE8E05BB940711F83B5484 /* Pods_H4RDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33AE4ED38265E2234AC95E08 /* Pods_H4RDTests.framework */; };
+		BF73F2461161BC4CE40F0E07 /* Pods_H4RDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B84394E9812E1B4B3A25FC /* Pods_H4RDUITests.framework */; };
+		D0603B8120F3C21300783458 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0603B8020F3C21300783458 /* StartScene.sks */; };
+		D0603B8520F3C25E00783458 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0603B8420F3C25E00783458 /* StartScene.swift */; };
+		D0603B8720F3C66000783458 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0603B8620F3C66000783458 /* StartViewController.swift */; };
+		D089763D20FC562F00F9EE68 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089763C20FC562F00F9EE68 /* GameOverScene.swift */; };
+		D089763F20FC564700F9EE68 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D089763E20FC564700F9EE68 /* GameOverViewController.swift */; };
+		D089764320FC567200F9EE68 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D089764220FC567200F9EE68 /* GameOverScene.sks */; };
+		D09EB683210F044D0084FE37 /* H4RD-Soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D09EB682210F044D0084FE37 /* H4RD-Soundtrack.mp3 */; };
+		D0B1DD5E20F37748007C7D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1DD5D20F37748007C7D76 /* AppDelegate.swift */; };
+		D0B1DD6020F37748007C7D76 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0B1DD5F20F37748007C7D76 /* GameScene.sks */; };
+		D0B1DD6220F37748007C7D76 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0B1DD6120F37748007C7D76 /* Actions.sks */; };
+		D0B1DD6420F37748007C7D76 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1DD6320F37748007C7D76 /* GameScene.swift */; };
+		D0B1DD6620F37748007C7D76 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1DD6520F37748007C7D76 /* GameViewController.swift */; };
+		D0B1DD6920F37748007C7D76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B1DD6720F37748007C7D76 /* Main.storyboard */; };
+		D0B1DD6B20F3774A007C7D76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B1DD6A20F3774A007C7D76 /* Assets.xcassets */; };
+		D0B1DD6E20F3774A007C7D76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B1DD6C20F3774A007C7D76 /* LaunchScreen.storyboard */; };
+		D0B1DD7920F3774A007C7D76 /* H4RDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1DD7820F3774A007C7D76 /* H4RDTests.swift */; };
+		D0B1DD8420F3774A007C7D76 /* H4RDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B1DD8320F3774A007C7D76 /* H4RDUITests.swift */; };
+		D0BB9A782109926000076C07 /* collision.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0BB9A772109926000076C07 /* collision.sks */; };
+		D0BB9A7A2109A2B800076C07 /* buttonSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0BB9A792109A2B800076C07 /* buttonSound.mp3 */; };
+		D0BB9A7C2109A67300076C07 /* fingerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0BB9A7B2109A67300076C07 /* fingerSound.mp3 */; };
+		D0BB9A802109AB1700076C07 /* collisionSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D0BB9A7F2109AB1700076C07 /* collisionSound2.mp3 */; };
+		D0C13EC32126FE8B0030E8DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0C13EC22126FE8B0030E8DA /* GoogleService-Info.plist */; };
+		D0C8767721060CE10050AA10 /* OptionsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0C8767621060CE10050AA10 /* OptionsScene.sks */; };
+		D0C8767921060D030050AA10 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C8767821060D030050AA10 /* OptionsScene.swift */; };
+		D0C8767B21060D180050AA10 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C8767A21060D180050AA10 /* OptionsViewController.swift */; };
+		D0FDFFF62128005300D3A207 /* StatsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDFFF52128005300D3A207 /* StatsScene.swift */; };
+		D0FDFFF82128006600D3A207 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FDFFF72128006600D3A207 /* StatsViewController.swift */; };
+		D0FDFFFA2128007700D3A207 /* StatsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D0FDFFF92128007700D3A207 /* StatsScene.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0B1DD7520F3774A007C7D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B1DD5220F37748007C7D76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B1DD5920F37748007C7D76;
+			remoteInfo = H4RD;
+		};
+		D0B1DD8020F3774A007C7D76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0B1DD5220F37748007C7D76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B1DD5920F37748007C7D76;
+			remoteInfo = H4RD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B84394E9812E1B4B3A25FC /* Pods_H4RDUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H4RDUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E4F4A06402E326C50A906D3 /* Pods-H4RD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4RD.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4RD/Pods-H4RD.release.xcconfig"; sourceTree = "<group>"; };
+		2412AE3E263E719B97CBE211 /* Pods-H4RDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4RDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4RDTests/Pods-H4RDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33AE4ED38265E2234AC95E08 /* Pods_H4RDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H4RDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C430CD521CF9DA8A0B07E74 /* Pods-H4RDUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4RDUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4RDUITests/Pods-H4RDUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60E78A85853E2899DDBCE673 /* Pods-H4RDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4RDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4RDTests/Pods-H4RDTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0603B8020F3C21300783458 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		D0603B8420F3C25E00783458 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		D0603B8620F3C66000783458 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D089763C20FC562F00F9EE68 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		D089763E20FC564700F9EE68 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		D089764220FC567200F9EE68 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		D09EB682210F044D0084FE37 /* H4RD-Soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "H4RD-Soundtrack.mp3"; sourceTree = "<group>"; };
+		D0B1DD5A20F37748007C7D76 /* H4RD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H4RD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B1DD5D20F37748007C7D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0B1DD5F20F37748007C7D76 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D0B1DD6120F37748007C7D76 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		D0B1DD6320F37748007C7D76 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D0B1DD6520F37748007C7D76 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D0B1DD6820F37748007C7D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0B1DD6A20F3774A007C7D76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0B1DD6D20F3774A007C7D76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0B1DD6F20F3774A007C7D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B1DD7420F3774A007C7D76 /* H4RDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H4RDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B1DD7820F3774A007C7D76 /* H4RDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4RDTests.swift; sourceTree = "<group>"; };
+		D0B1DD7A20F3774A007C7D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B1DD7F20F3774A007C7D76 /* H4RDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H4RDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B1DD8320F3774A007C7D76 /* H4RDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H4RDUITests.swift; sourceTree = "<group>"; };
+		D0B1DD8520F3774A007C7D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BB9A772109926000076C07 /* collision.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = collision.sks; sourceTree = "<group>"; };
+		D0BB9A792109A2B800076C07 /* buttonSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonSound.mp3; sourceTree = "<group>"; };
+		D0BB9A7B2109A67300076C07 /* fingerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fingerSound.mp3; sourceTree = "<group>"; };
+		D0BB9A7F2109AB1700076C07 /* collisionSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = collisionSound2.mp3; sourceTree = "<group>"; };
+		D0C13EC22126FE8B0030E8DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D0C8767621060CE10050AA10 /* OptionsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OptionsScene.sks; sourceTree = "<group>"; };
+		D0C8767821060D030050AA10 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
+		D0C8767A21060D180050AA10 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		D0FDFFF52128005300D3A207 /* StatsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsScene.swift; sourceTree = "<group>"; };
+		D0FDFFF72128006600D3A207 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		D0FDFFF92128007700D3A207 /* StatsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StatsScene.sks; sourceTree = "<group>"; };
+		E4D92DC773A9558FCE88FBB6 /* Pods_H4RD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H4RD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F059C57995150717BFA6256E /* Pods-H4RD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4RD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H4RD/Pods-H4RD.debug.xcconfig"; sourceTree = "<group>"; };
+		F08388DA97137547B11DEFEF /* Pods-H4RDUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H4RDUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-H4RDUITests/Pods-H4RDUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0B1DD5720F37748007C7D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929ACA4A8A5D44203752738D /* Pods_H4RD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B1DD7120F3774A007C7D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8EE8E05BB940711F83B5484 /* Pods_H4RDTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B1DD7C20F3774A007C7D76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF73F2461161BC4CE40F0E07 /* Pods_H4RDUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0930B8742A3C455F923BA671 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F059C57995150717BFA6256E /* Pods-H4RD.debug.xcconfig */,
+				1E4F4A06402E326C50A906D3 /* Pods-H4RD.release.xcconfig */,
+				2412AE3E263E719B97CBE211 /* Pods-H4RDTests.debug.xcconfig */,
+				60E78A85853E2899DDBCE673 /* Pods-H4RDTests.release.xcconfig */,
+				4C430CD521CF9DA8A0B07E74 /* Pods-H4RDUITests.debug.xcconfig */,
+				F08388DA97137547B11DEFEF /* Pods-H4RDUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B6C7CB90A97611CF8CB14F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4D92DC773A9558FCE88FBB6 /* Pods_H4RD.framework */,
+				33AE4ED38265E2234AC95E08 /* Pods_H4RDTests.framework */,
+				02B84394E9812E1B4B3A25FC /* Pods_H4RDUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0B1DD5120F37748007C7D76 = {
+			isa = PBXGroup;
+			children = (
+				D0B1DD5C20F37748007C7D76 /* H4RD */,
+				D0B1DD7720F3774A007C7D76 /* H4RDTests */,
+				D0B1DD8220F3774A007C7D76 /* H4RDUITests */,
+				D0B1DD5B20F37748007C7D76 /* Products */,
+				0930B8742A3C455F923BA671 /* Pods */,
+				9B6C7CB90A97611CF8CB14F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0B1DD5B20F37748007C7D76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0B1DD5A20F37748007C7D76 /* H4RD.app */,
+				D0B1DD7420F3774A007C7D76 /* H4RDTests.xctest */,
+				D0B1DD7F20F3774A007C7D76 /* H4RDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0B1DD5C20F37748007C7D76 /* H4RD */ = {
+			isa = PBXGroup;
+			children = (
+				D0B1DD5D20F37748007C7D76 /* AppDelegate.swift */,
+				D0B1DD5F20F37748007C7D76 /* GameScene.sks */,
+				D0B1DD6320F37748007C7D76 /* GameScene.swift */,
+				D0B1DD6520F37748007C7D76 /* GameViewController.swift */,
+				D0603B8020F3C21300783458 /* StartScene.sks */,
+				D0603B8420F3C25E00783458 /* StartScene.swift */,
+				D0603B8620F3C66000783458 /* StartViewController.swift */,
+				D089764220FC567200F9EE68 /* GameOverScene.sks */,
+				D089763C20FC562F00F9EE68 /* GameOverScene.swift */,
+				D089763E20FC564700F9EE68 /* GameOverViewController.swift */,
+				D0C8767621060CE10050AA10 /* OptionsScene.sks */,
+				D0C8767821060D030050AA10 /* OptionsScene.swift */,
+				D0C8767A21060D180050AA10 /* OptionsViewController.swift */,
+				D0FDFFF92128007700D3A207 /* StatsScene.sks */,
+				D0FDFFF52128005300D3A207 /* StatsScene.swift */,
+				D0FDFFF72128006600D3A207 /* StatsViewController.swift */,
+				D0B1DD6720F37748007C7D76 /* Main.storyboard */,
+				D0B1DD6A20F3774A007C7D76 /* Assets.xcassets */,
+				D09EB682210F044D0084FE37 /* H4RD-Soundtrack.mp3 */,
+				D0BB9A7F2109AB1700076C07 /* collisionSound2.mp3 */,
+				D0BB9A7B2109A67300076C07 /* fingerSound.mp3 */,
+				D0BB9A792109A2B800076C07 /* buttonSound.mp3 */,
+				D0BB9A772109926000076C07 /* collision.sks */,
+				D0B1DD6120F37748007C7D76 /* Actions.sks */,
+				D0B1DD6C20F3774A007C7D76 /* LaunchScreen.storyboard */,
+				D0B1DD6F20F3774A007C7D76 /* Info.plist */,
+				D0C13EC22126FE8B0030E8DA /* GoogleService-Info.plist */,
+			);
+			path = H4RD;
+			sourceTree = "<group>";
+		};
+		D0B1DD7720F3774A007C7D76 /* H4RDTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B1DD7820F3774A007C7D76 /* H4RDTests.swift */,
+				D0B1DD7A20F3774A007C7D76 /* Info.plist */,
+			);
+			path = H4RDTests;
+			sourceTree = "<group>";
+		};
+		D0B1DD8220F3774A007C7D76 /* H4RDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0B1DD8320F3774A007C7D76 /* H4RDUITests.swift */,
+				D0B1DD8520F3774A007C7D76 /* Info.plist */,
+			);
+			path = H4RDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0B1DD5920F37748007C7D76 /* H4RD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B1DD8820F3774A007C7D76 /* Build configuration list for PBXNativeTarget "H4RD" */;
+			buildPhases = (
+				D63AEA3C74B80A2B13D4C399 /* [CP] Check Pods Manifest.lock */,
+				D0B1DD5620F37748007C7D76 /* Sources */,
+				D0B1DD5720F37748007C7D76 /* Frameworks */,
+				D0B1DD5820F37748007C7D76 /* Resources */,
+				732AA59CE77432F2F8471C9C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H4RD;
+			productName = H4RD;
+			productReference = D0B1DD5A20F37748007C7D76 /* H4RD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0B1DD7320F3774A007C7D76 /* H4RDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B1DD8B20F3774A007C7D76 /* Build configuration list for PBXNativeTarget "H4RDTests" */;
+			buildPhases = (
+				EC6C3A871FDF02972A82DC6F /* [CP] Check Pods Manifest.lock */,
+				D0B1DD7020F3774A007C7D76 /* Sources */,
+				D0B1DD7120F3774A007C7D76 /* Frameworks */,
+				D0B1DD7220F3774A007C7D76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0B1DD7620F3774A007C7D76 /* PBXTargetDependency */,
+			);
+			name = H4RDTests;
+			productName = H4RDTests;
+			productReference = D0B1DD7420F3774A007C7D76 /* H4RDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0B1DD7E20F3774A007C7D76 /* H4RDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B1DD8E20F3774A007C7D76 /* Build configuration list for PBXNativeTarget "H4RDUITests" */;
+			buildPhases = (
+				7FEBD974B9082EDB94C6FBA6 /* [CP] Check Pods Manifest.lock */,
+				D0B1DD7B20F3774A007C7D76 /* Sources */,
+				D0B1DD7C20F3774A007C7D76 /* Frameworks */,
+				D0B1DD7D20F3774A007C7D76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0B1DD8120F3774A007C7D76 /* PBXTargetDependency */,
+			);
+			name = H4RDUITests;
+			productName = H4RDUITests;
+			productReference = D0B1DD7F20F3774A007C7D76 /* H4RDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0B1DD5220F37748007C7D76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Bahadir Altun";
+				TargetAttributes = {
+					D0B1DD5920F37748007C7D76 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D0B1DD7320F3774A007C7D76 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D0B1DD5920F37748007C7D76;
+					};
+					D0B1DD7E20F3774A007C7D76 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D0B1DD5920F37748007C7D76;
+					};
+				};
+			};
+			buildConfigurationList = D0B1DD5520F37748007C7D76 /* Build configuration list for PBXProject "H4RD" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0B1DD5120F37748007C7D76;
+			productRefGroup = D0B1DD5B20F37748007C7D76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0B1DD5920F37748007C7D76 /* H4RD */,
+				D0B1DD7320F3774A007C7D76 /* H4RDTests */,
+				D0B1DD7E20F3774A007C7D76 /* H4RDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0B1DD5820F37748007C7D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B1DD6920F37748007C7D76 /* Main.storyboard in Resources */,
+				D0B1DD6020F37748007C7D76 /* GameScene.sks in Resources */,
+				D0BB9A7C2109A67300076C07 /* fingerSound.mp3 in Resources */,
+				D0B1DD6B20F3774A007C7D76 /* Assets.xcassets in Resources */,
+				D0FDFFFA2128007700D3A207 /* StatsScene.sks in Resources */,
+				D0BB9A7A2109A2B800076C07 /* buttonSound.mp3 in Resources */,
+				D0C8767721060CE10050AA10 /* OptionsScene.sks in Resources */,
+				D089764320FC567200F9EE68 /* GameOverScene.sks in Resources */,
+				D0B1DD6E20F3774A007C7D76 /* LaunchScreen.storyboard in Resources */,
+				D0BB9A782109926000076C07 /* collision.sks in Resources */,
+				D0B1DD6220F37748007C7D76 /* Actions.sks in Resources */,
+				D0603B8120F3C21300783458 /* StartScene.sks in Resources */,
+				D09EB683210F044D0084FE37 /* H4RD-Soundtrack.mp3 in Resources */,
+				D0BB9A802109AB1700076C07 /* collisionSound2.mp3 in Resources */,
+				D0C13EC32126FE8B0030E8DA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B1DD7220F3774A007C7D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B1DD7D20F3774A007C7D76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		732AA59CE77432F2F8471C9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-H4RD/Pods-H4RD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-H4RD/Pods-H4RD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FEBD974B9082EDB94C6FBA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H4RDUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D63AEA3C74B80A2B13D4C399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H4RD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6C3A871FDF02972A82DC6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H4RDTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0B1DD5620F37748007C7D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B1DD6420F37748007C7D76 /* GameScene.swift in Sources */,
+				D0FDFFF82128006600D3A207 /* StatsViewController.swift in Sources */,
+				D0603B8720F3C66000783458 /* StartViewController.swift in Sources */,
+				D0B1DD6620F37748007C7D76 /* GameViewController.swift in Sources */,
+				D0C8767B21060D180050AA10 /* OptionsViewController.swift in Sources */,
+				D0B1DD5E20F37748007C7D76 /* AppDelegate.swift in Sources */,
+				D089763F20FC564700F9EE68 /* GameOverViewController.swift in Sources */,
+				D089763D20FC562F00F9EE68 /* GameOverScene.swift in Sources */,
+				D0603B8520F3C25E00783458 /* StartScene.swift in Sources */,
+				D0FDFFF62128005300D3A207 /* StatsScene.swift in Sources */,
+				D0C8767921060D030050AA10 /* OptionsScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B1DD7020F3774A007C7D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B1DD7920F3774A007C7D76 /* H4RDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B1DD7B20F3774A007C7D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B1DD8420F3774A007C7D76 /* H4RDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0B1DD7620F3774A007C7D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0B1DD5920F37748007C7D76 /* H4RD */;
+			targetProxy = D0B1DD7520F3774A007C7D76 /* PBXContainerItemProxy */;
+		};
+		D0B1DD8120F3774A007C7D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0B1DD5920F37748007C7D76 /* H4RD */;
+			targetProxy = D0B1DD8020F3774A007C7D76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0B1DD6720F37748007C7D76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B1DD6820F37748007C7D76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0B1DD6C20F3774A007C7D76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0B1DD6D20F3774A007C7D76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0B1DD8620F3774A007C7D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0B1DD8720F3774A007C7D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0B1DD8920F3774A007C7D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F059C57995150717BFA6256E /* Pods-H4RD.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4G6B6983D;
+				INFOPLIST_FILE = H4RD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibahadiraltun.H4RD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0B1DD8A20F3774A007C7D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E4F4A06402E326C50A906D3 /* Pods-H4RD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4G6B6983D;
+				INFOPLIST_FILE = H4RD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibahadiraltun.H4RD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0B1DD8C20F3774A007C7D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2412AE3E263E719B97CBE211 /* Pods-H4RDTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H4RDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibahadiraltun.H4RDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H4RD.app/H4RD";
+			};
+			name = Debug;
+		};
+		D0B1DD8D20F3774A007C7D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E78A85853E2899DDBCE673 /* Pods-H4RDTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H4RDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibahadiraltun.H4RDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H4RD.app/H4RD";
+			};
+			name = Release;
+		};
+		D0B1DD8F20F3774A007C7D76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C430CD521CF9DA8A0B07E74 /* Pods-H4RDUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H4RDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibahadiraltun.H4RDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = H4RD;
+			};
+			name = Debug;
+		};
+		D0B1DD9020F3774A007C7D76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08388DA97137547B11DEFEF /* Pods-H4RDUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H4RDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ibahadiraltun.H4RDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = H4RD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0B1DD5520F37748007C7D76 /* Build configuration list for PBXProject "H4RD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B1DD8620F3774A007C7D76 /* Debug */,
+				D0B1DD8720F3774A007C7D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B1DD8820F3774A007C7D76 /* Build configuration list for PBXNativeTarget "H4RD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B1DD8920F3774A007C7D76 /* Debug */,
+				D0B1DD8A20F3774A007C7D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B1DD8B20F3774A007C7D76 /* Build configuration list for PBXNativeTarget "H4RDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B1DD8C20F3774A007C7D76 /* Debug */,
+				D0B1DD8D20F3774A007C7D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0B1DD8E20F3774A007C7D76 /* Build configuration list for PBXNativeTarget "H4RDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B1DD8F20F3774A007C7D76 /* Debug */,
+				D0B1DD9020F3774A007C7D76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0B1DD5220F37748007C7D76 /* Project object */;
+}

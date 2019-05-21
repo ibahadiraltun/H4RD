@@ -1,0 +1,6 @@
+framework module Pods_H4RDTests {
+  umbrella header "Pods-H4RDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
